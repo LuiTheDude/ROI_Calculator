@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="calcForm">
+        <h1 class="myH1">Return On Investment</h1>
+        <h1 class="myH1">Calculator</h1>
+        <label for="initialCapital" class="label">Starting Capital:</label>
+        <input type="number" class="input" name="initialCapital" id="initialCapital" min="1">
+        <label for="annual" class="label">Average Annual Return (%):</label>
+        <input type="number" class="input" name="annual" id="annual" min="1">
+        <label for="years" class="label">Years To Hold:</label>
+        <input type="number" class="input" name="years" id="years" min="1">
+        <button type="submit" class="calculateBtn">Calculate</button>
+    </form>
+    <button onclick="changeAnnual(14)" id="nasdaq">NASDAQ</button>
+    <button onclick="changeAnnual(10)" id="sp500">S&P500</button>
+    <button onclick="changeAnnual(8)" id="nikkei225">Nikkei 225</button>
+    <button onclick="changeAnnual(7)" id="msci">MSCI World Index</button>
+    <button onclick="changeAnnual(4)" id="ftse">FTSE 100</button>
+
+    <p id="result">💸🤑💰</p>
+    <script src="index.js"></script>
+</body>
+</html>

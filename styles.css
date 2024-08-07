@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 50%, 0.34);
+}
+
+#calcForm{
+    margin-top: 4px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: hsla(120, 67%, 29%, 0.9);
+    transition: all 0.2s;
+}
+
+.myH1{
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 13px rgb(0, 255, 179);
+    font-size: 2.2rem;
+}
+
+.label{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.input{
+    margin: 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 3px 5px hsla(0, 0%, 0%, 0.6);
+    background-color: hsl(34, 87%, 79%);
+    font-size: 2rem;
+    padding: 10px 15px;
+}
+
+.calculateBtn{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 8px 18px;
+    border: 3px solid rgb(23, 78, 23);
+    border-radius: 25px;
+    background-color: rgb(124, 173, 237);
+    box-shadow: 4px 6px 5px hsla(0, 0%, 0%, 0.6);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.calculateBtn:hover{
+    background-color: rgb(73, 141, 218);
+    box-shadow: 2px 4px 5px hsla(0, 0%, 0%, 0.6);
+}
+
+.calculateBtn:active{
+    background-color: rgb(43, 119, 206);
+    box-shadow: none;
+}
+
+#result{
+    font-size: 3rem;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-shadow: 2px 2px 13px rgb(0, 255, 179);
+}
+
+#sp500{
+    background-color: rgb(24, 24, 211);
+    color: white;
+}
+
+#sp500:hover{
+    background-color: rgb(16, 16, 160);
+}
+
+#nasdaq{
+    background-color: rgb(222, 33, 33);
+    color: white;
+}
+
+#nasdaq:hover{
+    background-color: rgb(148, 21, 21);
+}
+
+#nikkei225{
+    background-color: rgb(130, 141, 16);
+    color: white;
+}
+
+#nikkei225:hover{
+    background-color: rgb(113, 121, 15);
+}
+
+#msci{
+    background-color: rgb(165, 20, 107);
+    color: white;
+}
+
+#msci:hover{
+    background-color: rgb(126, 16, 82);
+}
+
+#ftse{
+    background-color: rgb(15, 122, 30);
+    color: white;
+}
+
+#ftse:hover{
+    background-color: rgb(13, 98, 24);
+}
+
+#sp500, #nasdaq, #nikkei225, #msci, #ftse{
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 3px 8px;
+    box-shadow: 3px 3px 5px black;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#sp500:hover, #nasdaq:hover, #nikkei225:hover, #msci:hover, #ftse:hover{
+    padding: 3px 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#sp500:active, #nasdaq:active, #nikkei225:active, #msci:active, #ftse:active{
+    padding: 3px 10px;
+    border-radius: 13px;
+    box-shadow: none;
+}
+
